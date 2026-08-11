@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop SHADKO Global products online.">
+  <title>SHADKO Global | Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .shop-wrap{max-width:1100px;margin:40px auto;padding:0 18px}
+    .shop-head{text-align:center;margin-bottom:28px}
+    .shop-head h1{font-size:clamp(32px,6vw,52px);margin-bottom:8px}
+    .shop-tools{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:25px}
+    .shop-tools input,.shop-tools select{padding:13px;border:1px solid #ddd;border-radius:8px;flex:1;min-width:180px}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .product{border:1px solid #e5e5e5;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.06)}
+    .product img{width:100%;height:190px;object-fit:cover;background:#f4f4f4}
+    .product-body{padding:16px}
+    .product h3{margin:0 0 8px}
+    .price{font-size:20px;font-weight:700;margin:8px 0 14px}
+    .buy{display:block;width:100%;padding:12px;border:0;border-radius:8px;background:#111;color:#fff;text-decoration:none;text-align:center;cursor:pointer}
+    .cart-bar{position:sticky;bottom:10px;margin-top:25px;background:#111;color:#fff;padding:14px 18px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .cart-bar button{background:#fff;color:#111;border:0;padding:10px 14px;border-radius:7px}
+  </style>
+</head>
+<body>
+  <main class="shop-wrap">
+    <header class="shop-head">
+      <h1>SHADKO Global Shop</h1>
+      <p>Discover products from SHADKO Global.</p>
+    </header>
+
+    <div class="shop-tools">
+      <input id="search" type="search" placeholder="Search products...">
+      <select id="category">
+        <option value="all">All categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="home">Home</option>
+        <option value="fashion">Fashion</option>
+      </select>
+    </div>
+
+    <section id="products" class="products"></section>
+
+    <div class="cart-bar">
+      <span>Cart: <strong id="cart-count">0</strong> item(s)</span>
+      <button onclick="checkoutWhatsApp()">Order via WhatsApp</button>
+    </div>
+  </main>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
