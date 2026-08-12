@@ -1,16 +1,21 @@
-SHADKO GLOBAL SHOP ADD-ON
+SHADKO GLOBAL SHOP ADDON
 
 Files:
-- shop.html
-- products.js
-- cart.js
-
-HOW TO USE:
-1. Upload these files to the same GitHub Pages repository as index.html.
-2. Open your GitHub Pages website and add /shop.html to the address.
-3. Edit products.js to add your real products and prices.
-4. In cart.js, replace 254700000000 with your SHADKO WhatsApp number.
+- shop.html: product storefront
+- cart.html: shopping cart
+- products.js: product catalogue
+- cart.js: local browser cart and checkout request
+- downloads/: placeholder area for your actual digital files
 
 IMPORTANT:
-This is a starter storefront. It does not process card payments yet.
-For real payments, connect a secure payment provider after the storefront is working.
+The checkout currently creates an email order request to orders@shdmug.co.ke.
+Before accepting live payments, replace the checkout function with your preferred payment gateway.
+
+DIGITAL FILES:
+Replace the placeholder PDF filenames in products.js with your real files.
+For secure paid downloads, do not expose paid files directly in a public GitHub repository.
+Use a payment/download service or protected server storage.
+
+GITHUB PAGES:
+Upload these files into the repository folder where you want the shop.
+Open shop.html to test the store.
