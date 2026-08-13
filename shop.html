@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop SHADKO Global products online.">
-  <title>SHADKO Global | Shop</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .shop-wrap{max-width:1100px;margin:40px auto;padding:0 18px}
-    .shop-head{text-align:center;margin-bottom:28px}
-    .shop-head h1{font-size:clamp(32px,6vw,52px);margin-bottom:8px}
-    .shop-tools{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:25px}
-    .shop-tools input,.shop-tools select{padding:13px;border:1px solid #ddd;border-radius:8px;flex:1;min-width:180px}
-    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-    .product{border:1px solid #e5e5e5;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.06)}
-    .product img{width:100%;height:190px;object-fit:cover;background:#f4f4f4}
-    .product-body{padding:16px}
-    .product h3{margin:0 0 8px}
-    .price{font-size:20px;font-weight:700;margin:8px 0 14px}
-    .buy{display:block;width:100%;padding:12px;border:0;border-radius:8px;background:#111;color:#fff;text-decoration:none;text-align:center;cursor:pointer}
-    .cart-bar{position:sticky;bottom:10px;margin-top:25px;background:#111;color:#fff;padding:14px 18px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:10px}
-    .cart-bar button{background:#fff;color:#111;border:0;padding:10px 14px;border-radius:7px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHADKO Global AI — Digital Products</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="shop-wrap">
-    <header class="shop-head">
-      <h1>SHADKO Global Shop</h1>
-      <p>Discover products from SHADKO Global.</p>
-    </header>
+<header class="hero">
+  <nav><a href="index.html">SHADKO Global AI</a><a href="cart.html">🛒 Cart</a></nav>
+  <div class="hero-inner">
+    <p class="eyebrow">DIGITAL PRODUCTS</p>
+    <h1>Tools, guides & templates for smarter business.</h1>
+    <p>Instant-access digital resources for entrepreneurs, creators and professionals.</p>
+  </div>
+</header>
 
-    <div class="shop-tools">
-      <input id="search" type="search" placeholder="Search products...">
-      <select id="category">
-        <option value="all">All categories</option>
-        <option value="electronics">Electronics</option>
-        <option value="home">Home</option>
-        <option value="fashion">Fashion</option>
-      </select>
-    </div>
+<main>
+<section class="products">
+  <article class="card">
+    <div class="icon">🤖</div><span class="tag">AVAILABLE</span>
+    <h2>AI Business Prompt Pack</h2>
+    <p>Ready-to-use AI prompts for business, marketing, productivity and content creation.</p>
+    <strong>$9.99</strong>
+    <a class="btn" href="YOUR_CHECKOUT_LINK_1">Buy Now</a>
+  </article>
 
-    <section id="products" class="products"></section>
+  <article class="card">
+    <div class="icon">💰</div><span class="tag">AVAILABLE</span>
+    <h2>Personal Finance Budgeting Guide</h2>
+    <p>A practical guide for organizing income, expenses, savings and financial goals.</p>
+    <strong>$7.99</strong>
+    <a class="btn" href="YOUR_CHECKOUT_LINK_2">Buy Now</a>
+  </article>
 
-    <div class="cart-bar">
-      <span>Cart: <strong id="cart-count">0</strong> item(s)</span>
-      <button onclick="checkoutWhatsApp()">Order via WhatsApp</button>
-    </div>
-  </main>
+  <article class="card">
+    <div class="icon">🚀</div><span class="tag">AVAILABLE</span>
+    <h2>Small Business Starter Guide</h2>
+    <p>A practical starting point for planning, launching and growing a small business.</p>
+    <strong>$9.99</strong>
+    <a class="btn" href="YOUR_CHECKOUT_LINK_3">Buy Now</a>
+  </article>
 
-  <script src="products.js"></script>
-  <script src="cart.js"></script>
+  <article class="card">
+    <div class="icon">📱</div><span class="tag">AVAILABLE</span>
+    <h2>Social Media Content Templates</h2>
+    <p>Reusable content ideas and templates to help businesses stay consistent online.</p>
+    <strong>$6.99</strong>
+    <a class="btn" href="YOUR_CHECKOUT_LINK_4">Buy Now</a>
+  </article>
+
+  <article class="card soon"><div class="icon">📈</div><span class="tag">COMING SOON</span><h2>Digital Marketing Playbook</h2><p>A practical marketing system for attracting and converting customers.</p></article>
+  <article class="card soon"><div class="icon">💼</div><span class="tag">COMING SOON</span><h2>Freelancer Starter Kit</h2><p>Templates and guidance for launching a professional freelance service.</p></article>
+  <article class="card soon"><div class="icon">🧠</div><span class="tag">COMING SOON</span><h2>AI Productivity Toolkit</h2><p>Prompts and workflows designed to save time with AI.</p></article>
+  <article class="card soon"><div class="icon">📊</div><span class="tag">COMING SOON</span><h2>Business Planner Template</h2><p>A structured digital planner for goals, operations and growth.</p></article>
+  <article class="card soon"><div class="icon">✍️</div><span class="tag">COMING SOON</span><h2>100 Content Ideas Pack</h2><p>Content prompts for brands, creators and small businesses.</p></article>
+  <article class="card soon"><div class="icon">🛍️</div><span class="tag">COMING SOON</span><h2>E-commerce Starter Guide</h2><p>Essential steps for setting up and managing an online store.</p></article>
+  <article class="card soon"><div class="icon">📧</div><span class="tag">COMING SOON</span><h2>Email Marketing Templates</h2><p>Reusable email sequences for promotions, follow-ups and customer engagement.</p></article>
+  <article class="card soon"><div class="icon">🎯</div><span class="tag">COMING SOON</span><h2>Business Goal Planner</h2><p>A focused planning resource for turning ideas into measurable goals.</p></article>
+</section>
+
+<section class="notice">
+  <h2>Secure digital delivery</h2>
+  <p>Connect each “Buy Now” button to your preferred digital-payment/download service. Do not place paid PDF files in a publicly accessible download folder.</p>
+</section>
+</main>
+<footer>© 2026 SHADKO Global AI · Digital Products</footer>
 </body>
 </html>
