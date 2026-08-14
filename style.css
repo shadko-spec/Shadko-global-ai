@@ -76,21 +76,7 @@ nav a:hover {
   max-width: 750px;
   margin: 0 auto 35px;
   font-size: 20px;
-  color: #dddddd;
-}
-
-.btn,
-button {
-  display: inline-block;
-  background: #d4af37;
-  color: #111111;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  color: #ddddd
 
 .btn:hover,
 button:hover {
@@ -99,8 +85,29 @@ button:hover {
 }
 
 section {
-  padding: 80px 6%;
+  padding: 80px 6%;.btn,
+button {
+    display: inline-block;
+    background: #d4af37;
+    color: #111111;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+.btn:hover,
+button:hover {
+    background: #b8962e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
 
 section h2 {
   text-align: center;
