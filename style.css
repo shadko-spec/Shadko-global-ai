@@ -203,3 +203,89 @@ select {
     font-size: 30px;
   }
 }
+/* ===== PROFESSIONAL LANDING PAGE IMPROVEMENTS ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #111111, #1c1c1c);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #dddddd;
+}
+
+section {
+    position: relative;
+}
+
+section h2 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+button,
+.btn,
+a.button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
+  }
