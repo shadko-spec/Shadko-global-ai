@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SHADKO Global | Digital Products, AI & Business Solutions</title>
+  <title>SHADKO GLOBAL | AI, Digital Products & Business Solutions</title>
 
-  <meta name="description" content="SHADKO Global provides digital products, AI solutions, business services and online resources for individuals and businesses worldwide.">
+  <meta name="description" content="SHADKO GLOBAL provides AI solutions, digital products, business services, career solutions and online resources for individuals and businesses worldwide.">
+
+  <meta name="keywords" content="SHADKO GLOBAL, AI solutions, digital products, business services, online business, Kenya, global digital agency">
 
   <style>
     * {
@@ -16,35 +18,43 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
     }
 
     header {
-      background: #111;
+      background: #080808;
       color: white;
       padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
     .logo {
-      font-size: 25px;
+      font-size: 26px;
       font-weight: bold;
       color: #d4af37;
+      letter-spacing: 1px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       margin-left: 18px;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     nav a:hover {
@@ -52,45 +62,62 @@
     }
 
     .hero {
-      background: linear-gradient(135deg, #111, #292929);
+      background: linear-gradient(135deg, #050505, #202020);
       color: white;
+      padding: 90px 6%;
       text-align: center;
-      padding: 90px 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
     }
 
     .hero h1 {
-      font-size: 45px;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
+      font-size: 48px;
+      margin-bottom: 20px;
       color: #d4af37;
     }
 
+    .hero h2 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
     .hero p {
-      max-width: 750px;
-      margin: auto;
       font-size: 18px;
-      color: #ddd;
+      margin-bottom: 30px;
+      color: #eee;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 28px;
-      padding: 14px 28px;
-      background: #d4af37;
-      color: #111;
-      text-decoration: none;
+      padding: 13px 25px;
+      margin: 7px;
       border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
+      background: #d4af37;
+      color: #000;
     }
 
     .btn:hover {
       background: #fff;
     }
 
+    .btn-dark {
+      background: transparent;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+    }
+
     section {
       padding: 65px 6%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
     }
 
     .section-title {
@@ -99,7 +126,8 @@
     }
 
     .section-title h2 {
-      font-size: 32px;
+      font-size: 34px;
+      color: #111;
       margin-bottom: 10px;
     }
 
@@ -109,16 +137,16 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
 
     .card {
       background: white;
-      padding: 30px 22px;
+      padding: 28px 22px;
       border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border-top: 3px solid #d4af37;
     }
 
     .card h3 {
@@ -132,84 +160,175 @@
     }
 
     .products {
-      background: #eee;
+      background: #111;
+      color: white;
     }
 
-    .product-card {
-      background: white;
-      padding: 25px;
+    .products .section-title h2 {
+      color: white;
+    }
+
+    .products .section-title p {
+      color: #ccc;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product {
+      background: #1d1d1d;
+      padding: 30px;
       border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      border: 1px solid #333;
     }
 
-    .product-card h3 {
+    .product h3 {
+      color: #d4af37;
       margin-bottom: 12px;
     }
 
-    .product-card p {
-      color: #666;
-      margin-bottom: 15px;
+    .product p {
+      color: #ddd;
+      margin-bottom: 20px;
     }
 
     .about {
       background: white;
     }
 
-    .about-content {
+    .about-box {
       max-width: 900px;
       margin: auto;
       text-align: center;
     }
 
-    .about-content p {
-      margin-bottom: 15px;
+    .about-box p {
       color: #555;
+      font-size: 17px;
+      margin-bottom: 15px;
     }
 
     .contact {
-      background: #111;
-      color: white;
+      background: #f0f0f0;
+    }
+
+    .contact-box {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
       text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
-    .contact h2 {
-      margin-bottom: 15px;
+    .contact-item {
+      margin: 18px 0;
+      font-size: 17px;
     }
 
-    .contact p {
-      color: #ddd;
-      margin: 8px 0;
+    .contact-item a {
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      color: #d4af37;
     }
 
     footer {
-      background: #080808;
-      color: #aaa;
+      background: #050505;
+      color: #ccc;
       text-align: center;
-      padding: 25px 15px;
-      font-size: 14px;
+      padding: 30px 6%;
+      border-top: 2px solid #d4af37;
     }
 
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
+    footer strong {
+      color: #d4af37;
+    }
+
+    .social {
+      margin: 15px 0;
+    }
+
+    .social a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      nav a {
-        margin: 0 7px;
+      .product-grid {
+        grid-template-columns: 1fr;
       }
 
       .hero h1 {
-        font-size: 34px;
+        font-size: 38px;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        position: relative;
+      }
+
+      .nav {
+        flex-direction: column;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
       }
 
       .hero {
-        padding: 65px 18px;
+        padding: 65px 5%;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .hero p {
+        font-size: 16px;
       }
 
       section {
-        padding: 50px 20px;
+        padding: 50px 5%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .contact-box {
+        padding: 25px 15px;
       }
     }
   </style>
@@ -218,244 +337,161 @@
 <body>
 
 <header>
-  <div class="logo">SHADKO GLOBAL</div>
+  <div class="nav">
+    <div class="logo">SHADKO GLOBAL</div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-
 <section class="hero" id="home">
+  <div class="hero-content">
 
-  <h1>Welcome to <span>SHADKO Global</span></h1>
+    <h1>SHADKO GLOBAL</h1>
 
-  <p>
-    Your global hub for digital products, AI solutions,
-    business services and innovative online resources.
-  </p>
+    <h2>AI • Digital Solutions • Business • Online Products</h2>
 
-  <a class="btn"
-     href="https://payhip.com/SHADKOGLOBAL"
-     target="_blank">
-     SHOP DIGITAL PRODUCTS
-  </a>
+    <p>
+      Helping individuals, entrepreneurs and businesses access
+      modern digital solutions, AI tools, online products and
+      business services from one global platform.
+    </p>
 
+    <a class="btn" href="https://payhip.com/SHADKOGLOBAL" target="_blank">
+      SHOP DIGITAL PRODUCTS
+    </a>
+
+    <a class="btn btn-dark" href="#services">
+      EXPLORE SERVICES
+    </a>
+
+  </div>
 </section>
-
 
 <section id="services">
+  <div class="container">
 
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Solutions designed for individuals, entrepreneurs and businesses.</p>
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Practical digital solutions for modern businesses and individuals.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>AI Solutions</h3>
+        <p>
+          AI-powered tools, automation ideas, prompts and digital
+          solutions designed to improve productivity and business growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Digital Products</h3>
+        <p>
+          eBooks, guides, templates, AI prompt packs and other
+          downloadable resources.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business Solutions</h3>
+        <p>
+          Digital business support, online presence development,
+          marketing ideas and business resources.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Career Solutions</h3>
+        <p>
+          CV resources, career guides, job-search resources and
+          professional digital materials.
+        </p>
+      </div>
+
+    </div>
   </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>AI Solutions</h3>
-      <p>
-        AI tools, automation, prompts and digital solutions
-        to help you work smarter.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Digital Marketing</h3>
-      <p>
-        Digital marketing strategies and online growth
-        solutions for businesses.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Business Solutions</h3>
-      <p>
-        Practical digital resources and solutions for
-        entrepreneurs and organizations.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Digital Products</h3>
-      <p>
-        E-books, guides, templates, prompt packs and
-        other downloadable resources.
-      </p>
-    </div>
-
-  </div>
-
 </section>
-
 
 <section class="products" id="products">
+  <div class="container">
 
-  <div class="section-title">
-    <h2>Digital Products</h2>
-    <p>Explore our digital products and resources.</p>
+    <div class="section-title">
+      <h2>Digital Products</h2>
+      <p>Explore our growing collection of digital resources.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product">
+        <h3>AI Prompt Packs</h3>
+        <p>
+          Ready-to-use AI prompts designed for business,
+          marketing, productivity and content creation.
+        </p>
+
+        <a class="btn"
+           href="https://payhip.com/SHADKOGLOBAL"
+           target="_blank">
+          VIEW PRODUCTS
+        </a>
+      </div>
+
+      <div class="product">
+        <h3>eBooks & Guides</h3>
+        <p>
+          Practical digital guides and educational resources
+          for business, career and personal development.
+        </p>
+
+        <a class="btn"
+           href="https://payhip.com/SHADKOGLOBAL"
+           target="_blank">
+          SHOP NOW
+        </a>
+      </div>
+
+      <div class="product">
+        <h3>Business Resources</h3>
+        <p>
+          Templates, business resources and digital tools
+          created to help entrepreneurs work smarter.
+        </p>
+
+        <a class="btn"
+           href="https://payhip.com/SHADKOGLOBAL"
+           target="_blank">
+          EXPLORE
+        </a>
+      </div>
+
+    </div>
   </div>
-
-  <div class="cards">
-
-    <div class="product-card">
-      <h3>Digital E-Books</h3>
-      <p>
-        Educational and practical digital books
-        for personal and business growth.
-      </p>
-
-      <a class="btn"
-         href="https://payhip.com/SHADKOGLOBAL"
-         target="_blank">
-         VIEW PRODUCTS
-      </a>
-    </div>
-
-
-    <div class="product-card">
-      <h3>AI Prompt Packs</h3>
-      <p>
-        Ready-to-use AI prompts designed to improve
-        productivity and business results.
-      </p>
-
-      <a class="btn"
-         href="https://payhip.com/SHADKOGLOBAL"
-         target="_blank">
-         SHOP NOW
-      </a>
-    </div>
-
-
-    <div class="product-card">
-      <h3>Business Resources</h3>
-      <p>
-        Templates, guides and useful resources
-        for entrepreneurs.
-      </p>
-
-      <a class="btn"
-         href="https://payhip.com/SHADKOGLOBAL"
-         target="_blank">
-         SHOP NOW
-      </a>
-    </div>
-
-  </div>
-
 </section>
-
 
 <section class="about" id="about">
+  <div class="container">
 
-  <div class="section-title">
-    <h2>About SHADKO Global</h2>
-  </div>
+    <div class="section-title">
+      <h2>About SHADKO GLOBAL</h2>
+    </div>
 
-  <div class="about-content">
+    <div class="about-box">
 
-    <p>
-      SHADKO Global is a digital business hub focused on
-      connecting people and businesses with useful digital
-      products, technology and innovative solutions.
-    </p>
+      <p>
+        SHADKO GLOBAL is a digital business platform focused on
+        connecting people and businesses with useful technology,
+        AI solutions, digital products and online services.
+      </p>
 
-    <p>
-      Our goal is to make digital tools, knowledge and
-      business solutions accessible to customers locally
-      and globally.
-    </p>
-
-  </div>
-
-</section>
-
-
-<section class="contact" id="contact">
-  <h2>Get In Touch</h2>
-
-  <p>Interested in our digital products or services? Get in touch with SHADKO Global.</p>
-
-  <p>
-    <strong>WhatsApp:</strong><br>
-    <a href="https://wa.me/254724864001" target="_blank">
-      +254 724 864 001
-    </a>
-  </p>
-
-  <p>
-    <strong>Email:</strong><br>
-    <a href="mailto:info@shdmug.co.ke">
-      info@shdmug.co.ke
-    </a>
-  </p>
-
-  <p>
-    <strong>Business Email:</strong><br>
-    <a href="mailto:shadymug@gmail.com">
-      shadymug@gmail.com
-    </a>
-  </p>
-
-  <p>
-    <a class="btn" href="https://payhip.com/SHADKOGLOBAL" target="_blank">
-      VISIT SHADKO STORE
-    </a>
-  </p>
-</section>
-
-
-<footer>
-
-  <p>
-    © 2026 SHADKO Global. All Rights Reserved.
-  </p>
-
-  <p>
-    Digital Products • AI Solutions • Business Services
-  </p>
-
-</footer>
-
-</body
-</html><!-- CONTACT SECTION -->
-<section id="contact" style="padding:50px 20px; background:#111; color:white; text-align:center;">
-  <h2 style="font-size:32px; margin-bottom:15px;">Contact SHADKO Global</h2>
-
-  <p style="margin-bottom:25px;">
-    Have a question about our digital products or services? Get in touch with us.
-  </p>
-
-  <p>
-    <strong>Phone / WhatsApp:</strong><br>
-    <a href="https://wa.me/254724864001"
-       style="color:#f4c542; text-decoration:none;">
-       +254 724 864 001
-    </a>
-  </p>
-
-  <p style="margin-top:15px;">
-    <strong>Email:</strong><br>
-    <a href="mailto:info@shdmug.co.ke"
-       style="color:#f4c542; text-decoration:none;">
-       info@shdmug.co.ke
-    </a>
-  </p>
-
-  <p style="margin-top:10px;">
-    <a href="mailto:shadymugun@gmail.com"
-       style="color:#f4c542; text-decoration:none;">
-       shadymugun@gmail.com
-    </a>
-  </p>
-
-  <p style="margin-top:30px; font-size:14px;">
-    © 2026 SHADKO Global. All rights reserved.
-  </p>
-</section>
+      <p>
+        Our goal is to build a global digital hub where customers
+        can discover practical tools, products and services that
+       
